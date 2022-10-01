@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>课堂训练_1</title>
+    <!-- <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./index.css"> -->
+    <style>
+      body {
+        background-color: #f0f0f0f0;
+      }
+      div {
+        display: inline-block;
+      }
+      .bottom {
+        width: 600px;
+        /* height: 600px; */
+        /* background-color: #ffff; */
+        text-align: center;
+        font-size: 24px;
+      }
+      /* .bottom:hover{
+            height: 400px;
+            background-color: #ffff;
+            color: #f90;
+        } */
+      .bottom ::after,
+      .bottom::before {
+        display: table;
+        content: '';
+        clear: both;
+      }
+
+      .top-left {
+        width: 35%;
+        height: 30px;
+        background-color: rgb(12, 12, 12);
+        float: left;
+      }
+
+      .top-right {
+        width: 35%;
+        height: 30px;
+        background-color: rgb(12, 12, 12);
+        float: right;
+      }
+      .mid {
+        width: 30%;
+      }
+      .mid:hover {
+        width: 180px;
+        height: 250px;
+        color: #f90;
+        background-color: #fff;
+        border-radius: 0 0 30px 30px / 0 0 40px 40px;
+        content: '欢迎查看！';
+      }
+      .mid.mid:hover::after {
+        content: '欢迎查看！';
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="bottom">
+        <div class="top-left"></div>
+        <div class="mid">悬停</div>
+        <div class="top-right"></div>
+      </div>
+      <hr color="#f90" />
+      <div class="test"></div>
+    </header>
+    <menu></menu>
+  </body>
+</html>
+<!-- <a data-spm="navigation.to_cart_navigation_bar.1" rel="nofollow" id="J_miniCartBtn" href="//www.mi.com/buy/cart" class="cart-mini" data-params="&quot;&quot;">
+    <em class="iconfont-cart"></em>
+    <em class="iconfont-cart-full hide"></em>
+    购物车
+    <span class="cart-mini-num J_cartNum">
+        （0）
+    </span>
+</a> -->
